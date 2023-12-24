@@ -3,6 +3,17 @@
     margin-left: auto;
     text-align: right;
     cursor: pointer;
+    position: relative;
+}
+
+.issue.details > .attributes > .like-icon-outer {
+    margin-top: -22px;
+    margin-bottom: 12px;
+}
+
+#tab-content-history > .like-icon-outer {
+    margin-top: -28px;
+    margin-bottom: 12px;
 }
 
 .like-side-by-side p{
@@ -11,10 +22,9 @@
 }
 
 .like-sender-tooltip {
-    position: relative;
     cursor: pointer;
 }
-.like-sender-tooltip p{
+.like-icon-outer p{
     margin:0;
     padding:0;
 }
@@ -28,6 +38,7 @@
     border-radius: 5px;
     background: #000;
     width: 100px;
+    box-sizing: content-box;
 }
 .like-sender-content:before {
     content: "";
