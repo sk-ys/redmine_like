@@ -36,27 +36,15 @@ $(function() {
 
     // Resolved an issue with duplicate icons in version 4.1
 
-    if ($('#tab-properties').attr('class') == 'selected') {
-        $('[id^=heart-icon-main-]').hide();
+    if ($('#tab-properties, #tab-time_entries, #tab-changesets').attr('class') == 'selected') {
+        $('[id^=heart-icon-main-journal]').hide();
     }
 
-    $('#tab-history').click(function() {
-        $('[id^=heart-icon-main-]').hide();
+    $('#tab-history, #tab-notes').click(function() {
+        $('[id^=heart-icon-main-journal]').show();
     });
 
-    $('#tab-notes').click(function() {
-        $('[id^=heart-icon-main-]').show();
-    });
-
-    $('#tab-properties').click(function() {
-        $('[id^=heart-icon-main-]').hide();
-    });
-
-    $('#tab-time_entries').click(function() {
-        $('[id^=heart-icon-main-]').hide();
-    });
-
-    $('#tab-changesets').click(function() {
-        $('[id^=heart-icon-main-]').hide();
+    $('#tab-properties, #tab-time_entries, #tab-changesets').click(function() {
+        $('[id^=heart-icon-main-journal]').hide();
     });
 });
